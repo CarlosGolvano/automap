@@ -1,16 +1,18 @@
-[tool.poetry]
-name = "evaluation"
+[project]
+name = "automap"
 version = "0.1.0"
-description = "RDF Evaluation Framework"
-authors = ["Carlos"]
+description = "Automatic mappings generation proyect"
+authors = [
+    {name = "CarlosGolvano",email = "carlosgoolvin@gmail.com"}
+]
 readme = "README.md"
+requires-python = "==3.12.*"
+dependencies = [
+    "rdflib (==7.0.0)",
+    "pyyaml (==6.0.3)"
+]
 
-[tool.poetry.dependencies]
-python = "^3.10"
-rdflib = "^7.0.0"
-pyyaml = "^6.0.3"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
-
