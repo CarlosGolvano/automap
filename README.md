@@ -1,6 +1,6 @@
 # AUTOMAP
 
-Automatic mapping generation.
+Automatic mapping generation pipeline.
 
 ## Table of Contents
 
@@ -8,11 +8,11 @@ Automatic mapping generation.
 - [Graph Evaluation](#graph-evaluation)
 - [Postprocess](#postprocess)
 
-## Preprocess
+## 🔧 Preprocess
 
 blablabla
 
-## Graph Evaluation
+## 🕸️ Graph Evaluation
 
 A Python module for evaluating RDF graphs against reference ontologies with comprehensive metrics.
 
@@ -112,7 +112,7 @@ ids_by_type:
 - rdflib ^7.0.0
 - pyyaml ^6.0.3
 
-## Postprocess
+## ⚙️ Postprocess
 
 ### `map2map`
 
