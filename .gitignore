@@ -9,9 +9,15 @@ core/*/data/
 core/*/results/
 
 # Otros
-blinkg/
-PODIO/
-imbd/
+blinkg/*
+!blinkg/scripts/
+
+imbd/*
+!imbd/scripts/
+
+PODIO/*
+!PODIO/scripts/
+
 
 # Methods
 methods/
