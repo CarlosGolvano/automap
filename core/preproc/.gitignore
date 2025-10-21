@@ -1,21 +1,3 @@
-# vscode
-.vscode
-
-# Old
-core/evaluation/rdfeval/
-
-# Datos
-core/*/data/
-core/*/results/
-
-# Otros
-blinkg/
-PODIO/
-imbd/
-
-# Methods
-methods/
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

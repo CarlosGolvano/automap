@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "evaluation"
+version = "0.1.0"
+description = "RDF Evaluation Framework"
+authors = ["Carlos"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rdflib = "^7.0.0"
+pyyaml = "^6.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
