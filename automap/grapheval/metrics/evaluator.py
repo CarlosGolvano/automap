@@ -9,11 +9,11 @@ from rdflib import Graph
 from pathlib import Path
 from typing import Union, Optional
 from grapheval.utils.config import Config
-from .metrics.basic_metrics import BasicMetrics
-from .metrics.property_metrics import PropertyMetrics
-from .metrics.object_metrics import ObjectMetrics
-from .metrics.domain_metrics import DomainMetrics
-from .metrics.hierarchy import HierarchyScorer
+from .basic_metrics import BasicMetrics
+from .property_metrics import PropertyMetrics
+from .object_metrics import ObjectMetrics
+from .domain_metrics import DomainMetrics
+from .hierarchy import HierarchyScorer
 
 
 class GraphEvaluator:

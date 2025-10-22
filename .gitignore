@@ -9,14 +9,14 @@ core/*/data/
 core/*/results/
 
 # Otros
-blinkg/*
-!blinkg/scripts/
+cases/blinkg/*
+!cases/blinkg/scripts/
 
-imbd/*
-!imbd/scripts/
+cases/imbd/*
+!cases/imbd/scripts/
 
-PODIO/*
-!PODIO/scripts/
+cases/PODIO/*
+!cases/PODIO/scripts/
 
 
 # Methods

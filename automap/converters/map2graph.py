@@ -1,14 +1,3 @@
-"""Execute an RML mapping to generate a knowledge graph.
-
-The script relies on the `RMLMapper <https://github.com/RMLio/rmlmapper-java>`_
-CLI to execute the mapping.  The path to the mapper can either be passed with
-``--rmlmapper`` or read from the ``RMLMAPPER_JAR`` environment variable.  When
-``--ontology`` and ``--headers`` are supplied they are exposed to the mapping as
-RMLMapper parameters (``@{ontology}`` and ``@{headers}``).
-"""
-
-from __future__ import annotations
-
 import argparse
 import os
 import shutil
@@ -204,4 +193,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":  # pragma: no cover - CLI entry point
     sys.exit(main())
-
