@@ -8,15 +8,18 @@ core/evaluation/rdfeval/
 core/*/data/
 core/*/results/
 
-# Otros
+# Resources
+resources/rmlmapper-8.0.0-r378-all.jar
+
+# Cases
 cases/blinkg/*
-!cases/blinkg/scripts/
+!cases/blinkg/bin/
 
 cases/imbd/*
-!cases/imbd/scripts/
+!cases/imbd/bin/
 
 cases/PODIO/*
-!cases/PODIO/scripts/
+!cases/PODIO/bin/
 
 
 # Methods
