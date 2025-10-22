@@ -4,9 +4,22 @@ Automatic mapping generation pipeline.
 
 ## Table of Contents
 
+- [Requirements](#requirements)
 - [Preprocess](#preprocess)
 - [Graph Evaluation](#graph-evaluation)
 - [Postprocess](#postprocess)
+
+## Requirements
+
+Requirements in pyproject.toml. Use poetry.lock to install.
+
+```bash
+dependencies = [
+    "rdflib (>=7.2.1,<8.0.0)",
+    "pyyaml (>=6.0.3,<7.0.0)",
+    "yatter (>=2.0.3,<3.0.0)",
+]
+```
 
 ## 🔧 Preprocess
 
@@ -105,12 +118,6 @@ ids_by_type:
 - **Domain-Specific Metrics**: Entity coverage, type correctness, property validation
 - **Flexible Configuration**: YAML-based configuration for different ontologies
 - **Dual Interface**: Use as CLI tool or Python library
-
-### Requirements
-
-- Python ^3.10
-- rdflib ^7.0.0
-- pyyaml ^6.0.3
 
 ## ⚙️ Postprocess
 
