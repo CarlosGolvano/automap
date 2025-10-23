@@ -6,9 +6,10 @@ Automatic mapping generation pipeline.
 
 - [Requirements](#requirements)
 - [Running Experiments](#running-experiments)
-- [Preprocess](#preprocess)
-- [Graph Evaluation](#graph-evaluation)
-- [Postprocess](#postprocess)
+- Pipeline
+  - [Preprocess](#preprocess)
+  - [Graph Evaluation](#graph-evaluation)
+  - [Postprocess](#postprocess)
 
 ## Requirements
 
