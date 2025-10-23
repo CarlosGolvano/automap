@@ -8,13 +8,13 @@ fi
 
 # Directories paths
 automap="$project/automap"
-case="$project/datasets/blinkg"
+dataset="$project/datasets/blinkg"
 # -------------------------
 scenario="scenario1/1A"
 exp="pruebas_gemma"
 # -------------------------
-data="$case/data/$scenario"
-exp_dir="$case/exps/${scenario}_$exp"
+data="$dataset/data/$scenario"
+exp_dir="$dataset/exps/${scenario}_$exp"
 
 mkdir -p "$exp_dir"
 
