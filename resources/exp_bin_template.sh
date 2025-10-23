@@ -10,8 +10,8 @@ fi
 automap="$project/automap"
 case="$project/datasets/blinkg"
 # -------------------------
-scenario="scenario1/1A"
-exp="pruebas"
+scenario="<your_scenario>/<your_subscenario>/<...>"
+exp="<your_experiment_name>"
 # -------------------------
 data="$case/data/$scenario"
 exp_dir="$case/exps/${scenario}_$exp"
@@ -63,6 +63,7 @@ $example \
 
 cat $mapping_yml_path | $map2rml > $mapping_rml_path 2> $logs_path/map2rml.log
 
+touch $pred_graph_path
 $map2graph \
     -m $mapping_rml_path \
     -o $pred_graph_path 2> $logs_path/rmlmapper.log
@@ -80,6 +81,7 @@ mv $pred_graph_path.sorted $pred_graph_path
 
 cat $pred_graph_path | $eval \
     --config $exp_dir/config.yaml \
-    --gold_graph $gold_graph_path > $eval_results_path
+    --pred_mapping $mapping_rml_path \
+    --gold_graph $gold_graph_path > $eval_results_path 
 
 # ==============================================================================
