@@ -12,7 +12,12 @@ from automap.utils.config import Config
 from argparse import ArgumentParser
 
 
-def compute_metrics(gold_graph: Graph, pred_graph: Graph, config: Config) -> dict:
+def compute_metrics(
+        gold_graph: Graph,
+        pred_graph: Graph,
+        config: Config,
+        pred_mapping: str
+) -> dict:
     """
     Compute evaluation metrics between gold and predicted RDF graphs.
 
@@ -24,8 +29,19 @@ def compute_metrics(gold_graph: Graph, pred_graph: Graph, config: Config) -> dic
     Returns:
         dict: A dictionary containing evaluation metrics.
     """
-    evaluator = GraphEvaluator(pred_graph, gold_graph, config)
-    return evaluator.evaluate_all()
+
+    is_triples = len(pred_graph) > 0
+    map_is_correct = pred_mapping
+    results = {}
+
+    if is_triples and map_is_correct:
+        evaluator = GraphEvaluator(pred_graph, gold_graph, config)
+        results = evaluator.evaluate_all()
+
+    results["errors"] = {"NoTriples": not is_triples,
+                         "NoCorrectMapping": not map_is_correct}
+
+    return results
 
 
 def parse_args():
@@ -46,26 +62,40 @@ def parse_args():
         required=True,
         help='Path to the gold standard RDF graph file'
     )
+    parser.add_argument(
+        '--pred_mapping',
+        type=str,
+        required=True,
+        help='Path to the predicted mapping file (not used in current implementation)',
+    )
+    parser.add_argument(
+        '--pred_graph',
+        type=str,
+        required=False,
+        help='Path to the predicted RDF graph file (if not provided, read from stdin)'
+    )
+
     return parser.parse_args()
 
 
 def main():
-    import os
     """Main CLI entry point."""
     args = parse_args()
 
-    pred_graph_data = sys.stdin.read()
+    if not args.pred_graph:
+        pred_graph_data = sys.stdin.read()
+    else:
+        with open(args.pred_graph, 'r') as f:
+            pred_graph_data = f.read()
 
-    if not pred_graph_data:
-        json_eval = {"errors": "NoTriples"}
-        print(json.dumps(json_eval, ensure_ascii=False, indent=2))
-        return
+    with open(args.pred_mapping, 'r') as f:
+        pred_mapping = f.read()
 
     gold_graph = Graph().parse(args.gold_graph)
     pred_graph = Graph().parse(data=pred_graph_data)
     config = Config(args.config)
 
-    results = compute_metrics(gold_graph, pred_graph, config)
+    results = compute_metrics(gold_graph, pred_graph, config, pred_mapping)
     print(json.dumps(results, ensure_ascii=False, indent=2))
 
 

@@ -11,7 +11,7 @@ automap="$project/automap"
 case="$project/datasets/blinkg"
 # -------------------------
 scenario="scenario1/1A"
-exp="pruebas"
+exp="example"
 # -------------------------
 data="$case/data/$scenario"
 exp_dir="$case/exps/${scenario}_$exp"
@@ -53,8 +53,8 @@ mkdir -p $logs_path
 # PREDICTIONS
 # ==============================================================================
 
-# $example \
-#     --output $mapping_yml_path
+$example \
+    --output $mapping_yml_path
 
 # ==============================================================================
 # ==============================================================================
@@ -81,6 +81,7 @@ mv $pred_graph_path.sorted $pred_graph_path
 
 cat $pred_graph_path | $eval \
     --config $exp_dir/config.yaml \
-    --gold_graph $gold_graph_path > $eval_results_path
+    --pred_mapping $mapping_rml_path \
+    --gold_graph $gold_graph_path > $eval_results_path 
 
 # ==============================================================================
