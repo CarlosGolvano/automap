@@ -13,7 +13,7 @@ Automatic mapping generation pipeline.
 
 ## Requirements
 
-Requirements in pyproject.toml. Use poetry.lock to install.
+Python packages requirements in pyproject.toml. Use poetry.lock to install.
 
 ```bash
 requires-python = "==3.12.*"
@@ -24,6 +24,8 @@ dependencies = [
 ]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 ```
+
+This project also uses rmlmapper tool ([RMLio/rmlmapper](https://github.com/RMLio/rmlmapper-java)), version 8.0.0-r378-all ([download](https://github.com/RMLio/rmlmapper-java/releases/download/v8.0.0/rmlmapper-8.0.0-r378-all.jar)). It must be located into the `resources/` directory. 
 
 ## 🚀 Running Experiments
 
