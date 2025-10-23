@@ -24,8 +24,6 @@ dependencies = [
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 ```
 
-```
-
 ## 🚀 Running Experiments
 
 Bash scripts are provided to run complete experiments with a single command, automating the entire pipeline from mapping generation to evaluation.
@@ -43,64 +41,6 @@ A template is available at `resources/exp_bin_template.sh`. To use it:
 The script will create an experiment directory at `datasets/<dataset>/exps/<scenario>_<experiment_name>/` with the data files linked from `data/`.
 
 ## 🔧 Preprocess
-
-### Experiment Script Template
-
-A template script is provided at `resources/exp_bin_template.sh` that can be customized for different datasets and scenarios. The template includes:
-
-1. **Environment Setup**: Activates the conda environment automatically
-2. **Path Configuration**: Sets up directories for data, experiments, and outputs
-3. **Data Linking**: Creates symbolic links to share data between scenarios
-4. **Pipeline Execution**: Runs the complete workflow:
-   - Generate mapping predictions (YARRRML format)
-   - Convert YARRRML to RML
-   - Generate RDF graph from RML mapping
-   - Sort and normalize graphs
-   - Evaluate predicted graph against gold standard
-
-### Using the Template
-
-1. Copy the template to your dataset's `bin/` directory:
-   ```bash
-   cp resources/exp_bin_template.sh datasets/<dataset>/bin/<experiment_name>.sh
-   ```
-
-2. Customize the script by editing these variables:
-   ```bash
-   # Dataset name (e.g., "blinkg", "imbd", "PODIO")
-   case="$project/datasets/<dataset>"
-   
-   # Scenario path (e.g., "scenario1/1A")
-   scenario="<your_scenario>/<your_subscenario>/<...>"
-   
-   # Experiment name (e.g., "pruebas", "baseline")
-   exp="<your_experiment_name>"
-   ```
-
-3. Run the experiment:
-   ```bash
-   bash datasets/<dataset>/bin/<experiment_name>.sh
-   ```
-
-### Output Structure
-
-Each experiment creates a directory at `datasets/<dataset>/exps/<scenario>_<experiment_name>/` containing:
-
-- **Input data** (symbolic links): `mapping.yml`, `gold_graph.nt`, `config.yaml`, and data files
-- **Generated files**:
-  - `mapping.rml.ttl`: RML version of the predicted mapping
-  - `graph.nt`: RDF graph generated from the mapping
-  - `eval_results.json`: Comprehensive evaluation metrics
-
-### Example Scripts
-
-See existing experiment scripts in the dataset directories:
-- `datasets/blinkg/bin/scenario1_1A.sh`
-- `datasets/PODIO/bin/scenario1_1A.sh`
-
-These scripts demonstrate how to configure experiments for different scenarios and can serve as references for creating new experiments.
-
-## �🔧 Preprocess
 
 blablabla
 
