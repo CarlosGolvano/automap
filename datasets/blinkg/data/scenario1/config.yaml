@@ -2,7 +2,7 @@
 # This config file can be loaded using: Config('configs/film-ontology.yaml')
 
 # Path to the ontology file (relative or absolute)
-ontology_file: "/home/carlos/workspace/automap/cases/blinkg/data/scenario1/ontology.ttl"
+ontology_file: "/home/carlos/workspace/automap/datasets/blinkg/data/scenario1/ontology.ttl"
 
 # RDF Type URI
 rdf_type_uri: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"

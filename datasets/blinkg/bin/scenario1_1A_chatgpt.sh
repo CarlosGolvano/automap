@@ -8,13 +8,13 @@ fi
 
 # Directories paths
 automap="$project/automap"
-case="$project/datasets/blinkg"
+dataset="$project/datasets/blinkg"
 # -------------------------
 scenario="scenario1/1A"
-exp="pruebas"
+exp="pruebas_chatgpt"
 # -------------------------
-data="$case/data/$scenario"
-exp_dir="$case/exps/${scenario}_$exp"
+data="$dataset/data/$scenario"
+exp_dir="$dataset/exps/${scenario}_$exp"
 
 mkdir -p "$exp_dir"
 
@@ -29,7 +29,7 @@ ln -sf $data/../config.yaml $exp_dir/config.yaml
 python="python"
 
 # Method
-example="$python $automap/methods/example/example.py"
+example="$python $automap/methods/example/chatgpt.py"
 
 # Evaluation
 eval="$python $automap/grapheval/compute_metrics.py"
@@ -45,27 +45,25 @@ mapping_rml_path="$exp_dir/mapping.rml.ttl"
 pred_graph_path="$exp_dir/graph.nt"
 gold_graph_path="$exp_dir/gold_graph.nt"
 eval_results_path="$exp_dir/eval_results.json"
-logs_path="$exp_dir/logs"
-mkdir -p $logs_path
 # ==============================================================================
 
 # ==============================================================================
 # PREDICTIONS
 # ==============================================================================
 
-$example \
-    --output $mapping_yml_path
+# $example \
+#     --output $mapping_yml_path
 
 # ==============================================================================
 # ==============================================================================
 # MAPPING TO RML AND GRAPH GENERATION
 # ==============================================================================
 
-cat $mapping_yml_path | $map2rml > $mapping_rml_path 2> $logs_path/map2rml.log
+cat $mapping_yml_path | $map2rml > $mapping_rml_path 2> $exp_dir/map2rml.log
 
 $map2graph \
     -m $mapping_rml_path \
-    -o $pred_graph_path 2> $logs_path/rmlmapper.log
+    -o $pred_graph_path
 
 # ==============================================================================
 # ==============================================================================
@@ -78,8 +76,8 @@ mv $gold_graph_path.sorted $gold_graph_path
 cat $pred_graph_path | sort > $pred_graph_path.sorted
 mv $pred_graph_path.sorted $pred_graph_path
 
-cat $pred_graph_path | $eval \
+$eval \
     --config $exp_dir/config.yaml \
-    --gold_graph $gold_graph_path > $eval_results_path
+    --gold_graph $gold_graph_path < $pred_graph_path > $eval_results_path
 
 # ==============================================================================

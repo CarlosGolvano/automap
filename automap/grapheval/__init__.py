@@ -10,9 +10,8 @@ A comprehensive package for evaluating and comparing RDF graphs with support for
 __version__ = '0.1.0'
 __author__ = 'Carlos Golvano <carlos.golvano@upm.es>'
 
-from .metrics import GraphEvaluator, HierarchyScorer
+from .metrics import GraphEvaluator
 
 __all__ = [
     'GraphEvaluator',
-    'HierarchyScorer',
 ]

@@ -50,10 +50,16 @@ def parse_args():
 
 
 def main():
+    import os
     """Main CLI entry point."""
     args = parse_args()
 
     pred_graph_data = sys.stdin.read()
+
+    if not pred_graph_data:
+        json_eval = {"errors": "NoTriples"}
+        print(json.dumps(json_eval, ensure_ascii=False, indent=2))
+        return
 
     gold_graph = Graph().parse(args.gold_graph)
     pred_graph = Graph().parse(data=pred_graph_data)

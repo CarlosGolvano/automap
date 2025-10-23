@@ -1,1 +1,1 @@
-/home/carlos/workspace/automap/cases/blinkg/data/scenario1/1A/expected_table.md
+/home/carlos/workspace/automap/datasets/blinkg/data/scenario1/1A/expected_table.md

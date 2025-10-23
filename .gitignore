@@ -1,25 +1,18 @@
 # vscode
 .vscode
 
-# Old
-core/evaluation/rdfeval/
-
-# Datos
-core/*/data/
-core/*/results/
-
 # Resources
 resources/rmlmapper-8.0.0-r378-all.jar
 
-# Cases
-cases/blinkg/*
-!cases/blinkg/bin/
+# Datasets
+datasets/blinkg/*
+!datasets/blinkg/bin/
 
-cases/imbd/*
-!cases/imbd/bin/
+datasets/imbd/*
+!datasets/imbd/bin/
 
-cases/PODIO/*
-!cases/PODIO/bin/
+datasets/PODIO/*
+!datasets/PODIO/bin/
 
 # Methods
 methods/

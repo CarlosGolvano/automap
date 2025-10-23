@@ -53,8 +53,8 @@ mkdir -p $logs_path
 # PREDICTIONS
 # ==============================================================================
 
-$example \
-    --output $mapping_yml_path
+# $example \
+#     --output $mapping_yml_path
 
 # ==============================================================================
 # ==============================================================================
@@ -63,6 +63,7 @@ $example \
 
 cat $mapping_yml_path | $map2rml > $mapping_rml_path 2> $logs_path/map2rml.log
 
+touch $pred_graph_path
 $map2graph \
     -m $mapping_rml_path \
     -o $pred_graph_path 2> $logs_path/rmlmapper.log

@@ -3,15 +3,15 @@
 project="/home/carlos/workspace/automap"
 
 if [ -z "$CONDA_PREFIX" ]; then
-    conda activate $project/.venv
+    source /home/carlos/miniconda3/bin/activate $project/.venv
 fi
 
 # Directories paths
 automap="$project/automap"
-case="$project/cases/blinkg"
+case="$project/datasets/blinkg"
 # -------------------------
 scenario="scenario1/1A"
-exp="pruebas"
+exp="pruebas_gemma"
 # -------------------------
 data="$case/data/$scenario"
 exp_dir="$case/exps/${scenario}_$exp"
@@ -29,7 +29,7 @@ ln -s $data/../config.yaml $exp_dir/config.yaml
 python="python"
 
 # Method
-example="$python $automap/methods/example/example.py"
+example="$python $automap/methods/example/gemma.py"
 
 # Evaluation
 eval="$python $automap/grapheval/compute_metrics.py"

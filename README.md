@@ -133,14 +133,6 @@ ids_by_type:
     - "nm0000002"
 ```
 
-### Features
-
-- **Basic Metrics**: Precision, recall, F1-score for triples, subjects, predicates, objects, and classes
-- **Hierarchy-Aware Scoring**: Semantic similarity using ontology hierarchies
-- **Domain-Specific Metrics**: Entity coverage, type correctness, property validation
-- **Flexible Configuration**: YAML-based configuration for different ontologies
-- **Dual Interface**: Use as CLI tool or Python library
-
 ## ⚙️ Postprocess
 
 ### `map2map`
