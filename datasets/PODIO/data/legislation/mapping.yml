@@ -1,0 +1,79 @@
+
+prefixes:
+    #Core imports
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    xml: "http://www.w3.org/XML/1998/namespace"
+    #Vocabulary imports
+    schema: "http://schema.org/"
+    terms: "http://purl.org/dc/terms/"
+    dc: "http://purl.org/dc/elements/1.1/"
+    dcam: "http://purl.org/dc/dcam/"
+    vann: "http://purl.org/vocab/vann/"
+    skos: "http://www.w3.org/2004/02/skos/core#"
+    #Ontology imports
+    owl: "http://www.w3.org/2002/07/owl#"
+    foaf: "http://xmlns.com/foaf/0.1/"
+    sioc: "http://rdfs.org/sioc/ns#"
+    lkg: "http://lkg.lynx-project.eu/def/"
+    nif: "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#"
+    eli: "http://data.europa.eu/eli/ontology#"
+    #Knowledge graph domain declaration
+    podio: "http://w3id.org/podio#" # URL to ontoology
+
+sources:
+    data: [data/legislation.csv~csv ]
+
+mappings:
+    ApprovedPolicy:
+        sources:
+          - data
+        s: podio:ApprovedPolicy/$(id)
+        po:
+          - [a, podio:ApprovedPolicy]
+          - [lkg:metadata, podio:ApprovedPolicy/$(id)/Metadata~iri]
+          - [eli:is_part_of, podio:ApprovedPolicy/$(parent_id)~iri]
+          - [podio:content, $(content), xsd:string]
+          - [terms:language, $(language)~iri]
+          - [terms:created, $(date), xsd:dateTime]
+          - [terms:description, $(description), xsd:string]
+          - [terms:source, $(source)~iri]
+          - [terms:identifier, $(id), xsd:int]
+          - [schema:wordCount, $(word_count), xsd:int]
+          - [terms:audience, $(audience)~iri]
+          - [terms:publisher, $(publisher)~iri]
+          - [terms:creator, $(creator)~iri]
+
+    ParentPolicy:
+        sources:
+          - data
+        s: podio:ApprovedPolicy/$(parent_id)
+        po:
+          - [a, podio:ApprovedPolicy]
+          - [eli:has_part, podio:ApprovedPolicy/$(id)~iri]
+          - [terms:language, $(language)~iri]
+          - [terms:source, $(parent_source)~iri]
+          - [terms:identifier, $(parent_id), xsd:int]
+          - [terms:created, $(date), xsd:dateTime]
+          - [terms:audience, $(audience)~iri]
+          - [terms:publisher, $(publisher)~iri]
+          - [terms:creator, $(publisher)~iri]
+
+    Metadata:
+        sources:
+          - data
+        s: podio:ApprovedPolicy/$(id)/Metadata
+        po:
+          - [a, podio:ApprovedPolicy]
+          - [terms:language, $(language)~iri]
+          - [lkg:hasPDF, $(source)~iri]
+          - [terms:source, $(parent_source)~iri]
+          - [eli:version_date, $(date), xsd:dateTime]
+          - [eli:id_local, $(id), xsd:string]
+          - [lkg:summary, $(description), xsd:string]
+          - [terms:subject, $(topic), xsd:string]
+          - [terms:title, $(title), xsd:string]
+          - [lkg:hasAuthority, $(publisher)~iri]
+          - [eli:jurisdiction, $(jurisdiction), xsd:string]
+

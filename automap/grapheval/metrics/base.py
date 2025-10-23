@@ -1,5 +1,5 @@
 from rdflib import Graph
-from grapheval.utils.config import Config
+from automap.utils import Config
 
 
 class Metrics:

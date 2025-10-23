@@ -7,8 +7,8 @@ Updated to use the new grapheval package structure with YAML configuration.
 import sys
 import json
 from rdflib import Graph
-from grapheval import GraphEvaluator
-from grapheval.utils.config import Config
+from automap.grapheval.metrics import GraphEvaluator
+from automap.utils.config import Config
 from argparse import ArgumentParser
 
 

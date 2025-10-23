@@ -14,11 +14,13 @@ Automatic mapping generation pipeline.
 Requirements in pyproject.toml. Use poetry.lock to install.
 
 ```bash
+requires-python = "==3.12.*"
 dependencies = [
     "rdflib (>=7.2.1,<8.0.0)",
     "pyyaml (>=6.0.3,<7.0.0)",
     "yatter (>=2.0.3,<3.0.0)",
 ]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 ```
 
 ## 🔧 Preprocess

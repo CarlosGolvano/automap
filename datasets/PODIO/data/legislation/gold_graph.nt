@@ -1,0 +1,320 @@
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1> <http://lkg.lynx-project.eu/def/metadata> <http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1/Metadata>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1> <http://data.europa.eu/eli/ontology#is_part_of> <http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1> <http://purl.org/dc/terms/created> "1985-01-05T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1> <http://purl.org/dc/terms/description> "Notificación a los propietarios de varias sepulturas para su comparecencia en las oficinas administrativas".
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1> <http://purl.org/dc/terms/source> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-01.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1> <http://purl.org/dc/terms/identifier> "BOE-S-1985-4-1"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1> <http://schema.org/wordCount> "0"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q29>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q5659724>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q60052813>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1> <http://lkg.lynx-project.eu/def/metadata> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1/Metadata>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1> <http://data.europa.eu/eli/ontology#is_part_of> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1> <http://purl.org/dc/terms/created> "1985-01-09T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1> <http://purl.org/dc/terms/description> "Aprobación del proyecto y concurso para la construcción de una pista de atletismo en el estadio municipal de deportes".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1> <http://purl.org/dc/terms/source> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-02.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1> <http://purl.org/dc/terms/identifier> "BOCM-19850109T00:00:00-7-1"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1> <http://schema.org/wordCount> "0"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q60052813>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2> <http://lkg.lynx-project.eu/def/metadata> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2/Metadata>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2> <http://data.europa.eu/eli/ontology#is_part_of> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2> <http://purl.org/dc/terms/created> "1985-01-09T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2> <http://purl.org/dc/terms/description> "Adjudicación del concurso para la construcción de una piscina cubierta en el polideportivo municipal de deportes a la empresa  Cubiertas Muñoz S.A.".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2> <http://purl.org/dc/terms/source> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-02.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2> <http://purl.org/dc/terms/identifier> "BOCM-19850109T00:00:00-7-2"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2> <http://schema.org/wordCount> "0"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q60052813>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1> <http://lkg.lynx-project.eu/def/metadata> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1/Metadata>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1> <http://data.europa.eu/eli/ontology#is_part_of> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1> <http://purl.org/dc/terms/created> "1985-01-15T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1> <http://purl.org/dc/terms/description> "Aprobación del Estatuto del Patronato Deportivo Municipal".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1> <http://purl.org/dc/terms/source> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-03.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1> <http://purl.org/dc/terms/identifier> "BOCM-19850115T00:00:00-12-1"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1> <http://schema.org/wordCount> "0"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q60052813>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1> <http://lkg.lynx-project.eu/def/metadata> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1/Metadata>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1> <http://data.europa.eu/eli/ontology#is_part_of> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1> <http://purl.org/dc/terms/created> "1985-01-18T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1> <http://purl.org/dc/terms/description> "Aprobación de los pliegos para la construcción mediante subasta de una pista de atletismo en el estadio municipal de deportes".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1> <http://purl.org/dc/terms/source> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-04.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1> <http://purl.org/dc/terms/identifier> "BOCM-19850118T00:00:00-15-1"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1> <http://schema.org/wordCount> "0"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q60052813>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1> <http://lkg.lynx-project.eu/def/metadata> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1/Metadata>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1> <http://data.europa.eu/eli/ontology#is_part_of> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1> <http://purl.org/dc/terms/created> "1985-01-29T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1> <http://purl.org/dc/terms/description> "Licencia de Actividades. Expts. 1705, 1706, 1707".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1> <http://purl.org/dc/terms/source> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-05.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1> <http://purl.org/dc/terms/identifier> "BOCM-19850129T00:00:00-24-1"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1> <http://schema.org/wordCount> "0"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q60052813>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1> <http://lkg.lynx-project.eu/def/metadata> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1/Metadata>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1> <http://data.europa.eu/eli/ontology#is_part_of> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1> <http://purl.org/dc/terms/created> "1985-02-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1> <http://purl.org/dc/terms/description> "Adjudicación del concurso de obras para la construcción de un auditorio cubierto a la empresa Proapsa".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1> <http://purl.org/dc/terms/source> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-06.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1> <http://purl.org/dc/terms/identifier> "BOCM-19850201T00:00:00-27-1"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1> <http://schema.org/wordCount> "0"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q60052813>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1> <http://lkg.lynx-project.eu/def/metadata> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1/Metadata>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1> <http://data.europa.eu/eli/ontology#is_part_of> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1> <http://purl.org/dc/terms/created> "1985-02-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1> <http://purl.org/dc/terms/description> "Presupuesto General de Arganda del Rey para 1985".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1> <http://purl.org/dc/terms/source> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-08.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1> <http://purl.org/dc/terms/identifier> "BOCM-19850220T00:00:00-43-1"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1> <http://schema.org/wordCount> "0"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q60052813>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1> <http://lkg.lynx-project.eu/def/metadata> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1/Metadata>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1> <http://data.europa.eu/eli/ontology#is_part_of> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1> <http://purl.org/dc/terms/created> "1985-02-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1> <http://purl.org/dc/terms/description> "Modificación del Estudio de Detalle de la urbanización  Los Álamos, sita en c/ Subida Siete Vientos".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1> <http://purl.org/dc/terms/source> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-08.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1> <http://purl.org/dc/terms/identifier> "BOCM-19850220T00:00:00-42-1"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1> <http://schema.org/wordCount> "0"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q60052813>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1> <http://lkg.lynx-project.eu/def/metadata> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1/Metadata>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1> <http://data.europa.eu/eli/ontology#is_part_of> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1> <http://purl.org/dc/terms/created> "1985-03-04T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1> <http://purl.org/dc/terms/description> "Aprobación del Plan General de Ordenación Urbana".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1> <http://purl.org/dc/terms/source> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-10.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1> <http://purl.org/dc/terms/identifier> "BOCM-19850304T00:00:00-53-1"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1> <http://schema.org/wordCount> "0"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q60052813>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1/Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1/Metadata> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1/Metadata> <http://lkg.lynx-project.eu/def/hasPDF> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-01.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1/Metadata> <http://purl.org/dc/terms/source> <https://www.boe.es/diario_boe/txt.php?id=BOE-S-1985-4-1>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1/Metadata> <http://data.europa.eu/eli/ontology#version_date> "1985-01-05T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1/Metadata> <http://data.europa.eu/eli/ontology#id_local> "BOE-S-1985-4-1".
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1/Metadata> <http://lkg.lynx-project.eu/def/summary> "Notificación a los propietarios de varias sepulturas para su comparecencia en las oficinas administrativas".
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1/Metadata> <http://purl.org/dc/terms/subject> "Organización y Funcionamiento".
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1/Metadata> <http://purl.org/dc/terms/title> " ".
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1/Metadata> <http://lkg.lynx-project.eu/def/hasAuthority> <http://www.wikidata.org/entity/Q5659724>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1/Metadata> <http://data.europa.eu/eli/ontology#jurisdiction> "ES-MA".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1/Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1/Metadata> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1/Metadata> <http://lkg.lynx-project.eu/def/hasPDF> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-02.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1/Metadata> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850109T00:00:00/7/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1/Metadata> <http://data.europa.eu/eli/ontology#version_date> "1985-01-09T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1/Metadata> <http://data.europa.eu/eli/ontology#id_local> "BOCM-19850109T00:00:00-7-1".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1/Metadata> <http://lkg.lynx-project.eu/def/summary> "Aprobación del proyecto y concurso para la construcción de una pista de atletismo en el estadio municipal de deportes".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1/Metadata> <http://purl.org/dc/terms/subject> "Contratación".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1/Metadata> <http://purl.org/dc/terms/title> " ".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1/Metadata> <http://lkg.lynx-project.eu/def/hasAuthority> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1/Metadata> <http://data.europa.eu/eli/ontology#jurisdiction> "ES-MA".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2/Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2/Metadata> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2/Metadata> <http://lkg.lynx-project.eu/def/hasPDF> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-02.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2/Metadata> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850109T00:00:00/7/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2/Metadata> <http://data.europa.eu/eli/ontology#version_date> "1985-01-09T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2/Metadata> <http://data.europa.eu/eli/ontology#id_local> "BOCM-19850109T00:00:00-7-2".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2/Metadata> <http://lkg.lynx-project.eu/def/summary> "Adjudicación del concurso para la construcción de una piscina cubierta en el polideportivo municipal de deportes a la empresa  Cubiertas Muñoz S.A.".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2/Metadata> <http://purl.org/dc/terms/subject> "Contratación".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2/Metadata> <http://purl.org/dc/terms/title> " ".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2/Metadata> <http://lkg.lynx-project.eu/def/hasAuthority> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2/Metadata> <http://data.europa.eu/eli/ontology#jurisdiction> "ES-MA".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1/Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1/Metadata> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1/Metadata> <http://lkg.lynx-project.eu/def/hasPDF> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-03.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1/Metadata> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850115T00:00:00/12/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1/Metadata> <http://data.europa.eu/eli/ontology#version_date> "1985-01-15T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1/Metadata> <http://data.europa.eu/eli/ontology#id_local> "BOCM-19850115T00:00:00-12-1".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1/Metadata> <http://lkg.lynx-project.eu/def/summary> "Aprobación del Estatuto del Patronato Deportivo Municipal".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1/Metadata> <http://purl.org/dc/terms/subject> "Deportes".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1/Metadata> <http://purl.org/dc/terms/title> " ".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1/Metadata> <http://lkg.lynx-project.eu/def/hasAuthority> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1/Metadata> <http://data.europa.eu/eli/ontology#jurisdiction> "ES-MA".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1/Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1/Metadata> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1/Metadata> <http://lkg.lynx-project.eu/def/hasPDF> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-04.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1/Metadata> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850118T00:00:00/15/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1/Metadata> <http://data.europa.eu/eli/ontology#version_date> "1985-01-18T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1/Metadata> <http://data.europa.eu/eli/ontology#id_local> "BOCM-19850118T00:00:00-15-1".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1/Metadata> <http://lkg.lynx-project.eu/def/summary> "Aprobación de los pliegos para la construcción mediante subasta de una pista de atletismo en el estadio municipal de deportes".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1/Metadata> <http://purl.org/dc/terms/subject> "Contratación".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1/Metadata> <http://purl.org/dc/terms/title> " ".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1/Metadata> <http://lkg.lynx-project.eu/def/hasAuthority> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1/Metadata> <http://data.europa.eu/eli/ontology#jurisdiction> "ES-MA".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1/Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1/Metadata> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1/Metadata> <http://lkg.lynx-project.eu/def/hasPDF> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-05.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1/Metadata> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850129T00:00:00/24/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1/Metadata> <http://data.europa.eu/eli/ontology#version_date> "1985-01-29T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1/Metadata> <http://data.europa.eu/eli/ontology#id_local> "BOCM-19850129T00:00:00-24-1".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1/Metadata> <http://lkg.lynx-project.eu/def/summary> "Licencia de Actividades. Expts. 1705, 1706, 1707".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1/Metadata> <http://purl.org/dc/terms/subject> "Industria".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1/Metadata> <http://purl.org/dc/terms/title> " ".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1/Metadata> <http://lkg.lynx-project.eu/def/hasAuthority> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1/Metadata> <http://data.europa.eu/eli/ontology#jurisdiction> "ES-MA".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1/Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1/Metadata> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1/Metadata> <http://lkg.lynx-project.eu/def/hasPDF> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-06.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1/Metadata> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850201T00:00:00/27/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1/Metadata> <http://data.europa.eu/eli/ontology#version_date> "1985-02-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1/Metadata> <http://data.europa.eu/eli/ontology#id_local> "BOCM-19850201T00:00:00-27-1".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1/Metadata> <http://lkg.lynx-project.eu/def/summary> "Adjudicación del concurso de obras para la construcción de un auditorio cubierto a la empresa Proapsa".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1/Metadata> <http://purl.org/dc/terms/subject> "Contratación".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1/Metadata> <http://purl.org/dc/terms/title> " ".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1/Metadata> <http://lkg.lynx-project.eu/def/hasAuthority> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1/Metadata> <http://data.europa.eu/eli/ontology#jurisdiction> "ES-MA".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1/Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1/Metadata> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1/Metadata> <http://lkg.lynx-project.eu/def/hasPDF> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-08.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1/Metadata> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850220T00:00:00/43/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1/Metadata> <http://data.europa.eu/eli/ontology#version_date> "1985-02-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1/Metadata> <http://data.europa.eu/eli/ontology#id_local> "BOCM-19850220T00:00:00-43-1".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1/Metadata> <http://lkg.lynx-project.eu/def/summary> "Presupuesto General de Arganda del Rey para 1985".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1/Metadata> <http://purl.org/dc/terms/subject> "Régimen Económico".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1/Metadata> <http://purl.org/dc/terms/title> " ".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1/Metadata> <http://lkg.lynx-project.eu/def/hasAuthority> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1/Metadata> <http://data.europa.eu/eli/ontology#jurisdiction> "ES-MA".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1/Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1/Metadata> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1/Metadata> <http://lkg.lynx-project.eu/def/hasPDF> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-08.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1/Metadata> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850220T00:00:00/42/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1/Metadata> <http://data.europa.eu/eli/ontology#version_date> "1985-02-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1/Metadata> <http://data.europa.eu/eli/ontology#id_local> "BOCM-19850220T00:00:00-42-1".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1/Metadata> <http://lkg.lynx-project.eu/def/summary> "Modificación del Estudio de Detalle de la urbanización  Los Álamos, sita en c/ Subida Siete Vientos".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1/Metadata> <http://purl.org/dc/terms/subject> "Urbanismo".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1/Metadata> <http://purl.org/dc/terms/title> " ".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1/Metadata> <http://lkg.lynx-project.eu/def/hasAuthority> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1/Metadata> <http://data.europa.eu/eli/ontology#jurisdiction> "ES-MA".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1/Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1/Metadata> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1/Metadata> <http://lkg.lynx-project.eu/def/hasPDF> <https://archivo.ayto-arganda.es/recursos/DA/Sumarios/A00-10.pdf>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1/Metadata> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850304T00:00:00/53/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1/Metadata> <http://data.europa.eu/eli/ontology#version_date> "1985-03-04T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1/Metadata> <http://data.europa.eu/eli/ontology#id_local> "BOCM-19850304T00:00:00-53-1".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1/Metadata> <http://lkg.lynx-project.eu/def/summary> "Aprobación del Plan General de Ordenación Urbana".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1/Metadata> <http://purl.org/dc/terms/subject> "Urbanismo".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1/Metadata> <http://purl.org/dc/terms/title> " ".
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1/Metadata> <http://lkg.lynx-project.eu/def/hasAuthority> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1/Metadata> <http://data.europa.eu/eli/ontology#jurisdiction> "ES-MA".
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4> <http://data.europa.eu/eli/ontology#has_part> <http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4-1>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4> <http://purl.org/dc/terms/source> <https://www.boe.es/diario_boe/txt.php?id=BOE-S-1985-4-1>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4> <http://purl.org/dc/terms/identifier> "BOE-S-1985-4"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4> <http://purl.org/dc/terms/created> "1985-01-05T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q29>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q5659724>.
+<http://w3id.org/podio#ApprovedPolicy/BOE-S-1985-4> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q5659724>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://data.europa.eu/eli/ontology#has_part> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-1>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850109T00:00:00/7/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://purl.org/dc/terms/identifier> "BOCM-19850109T00:00:00-7"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://purl.org/dc/terms/created> "1985-01-09T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://data.europa.eu/eli/ontology#has_part> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7-2>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850109T00:00:00/7/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://purl.org/dc/terms/identifier> "BOCM-19850109T00:00:00-7"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://purl.org/dc/terms/created> "1985-01-09T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850109T00%3A00%3A00-7> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12> <http://data.europa.eu/eli/ontology#has_part> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12-1>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850115T00:00:00/12/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12> <http://purl.org/dc/terms/identifier> "BOCM-19850115T00:00:00-12"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12> <http://purl.org/dc/terms/created> "1985-01-15T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850115T00%3A00%3A00-12> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15> <http://data.europa.eu/eli/ontology#has_part> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15-1>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850118T00:00:00/15/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15> <http://purl.org/dc/terms/identifier> "BOCM-19850118T00:00:00-15"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15> <http://purl.org/dc/terms/created> "1985-01-18T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850118T00%3A00%3A00-15> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24> <http://data.europa.eu/eli/ontology#has_part> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24-1>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850129T00:00:00/24/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24> <http://purl.org/dc/terms/identifier> "BOCM-19850129T00:00:00-24"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24> <http://purl.org/dc/terms/created> "1985-01-29T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850129T00%3A00%3A00-24> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27> <http://data.europa.eu/eli/ontology#has_part> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27-1>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850201T00:00:00/27/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27> <http://purl.org/dc/terms/identifier> "BOCM-19850201T00:00:00-27"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27> <http://purl.org/dc/terms/created> "1985-02-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850201T00%3A00%3A00-27> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43> <http://data.europa.eu/eli/ontology#has_part> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43-1>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850220T00:00:00/43/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43> <http://purl.org/dc/terms/identifier> "BOCM-19850220T00:00:00-43"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43> <http://purl.org/dc/terms/created> "1985-02-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-43> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42> <http://data.europa.eu/eli/ontology#has_part> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42-1>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850220T00:00:00/42/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42> <http://purl.org/dc/terms/identifier> "BOCM-19850220T00:00:00-42"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42> <http://purl.org/dc/terms/created> "1985-02-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850220T00%3A00%3A00-42> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/podio#ApprovedPolicy>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53> <http://data.europa.eu/eli/ontology#has_part> <http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53-1>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-2/spa>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53> <http://purl.org/dc/terms/source> <https://www.bocm.es/boletin-completo/bocm-19850304T00:00:00/53/>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53> <http://purl.org/dc/terms/identifier> "BOCM-19850304T00:00:00-53"^^<http://www.w3.org/2001/XMLSchema#int>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53> <http://purl.org/dc/terms/created> "1985-03-04T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53> <http://purl.org/dc/terms/audience> <http://www.wikidata.org/entity/Q5756>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53> <http://purl.org/dc/terms/publisher> <http://www.wikidata.org/entity/Q578788>.
+<http://w3id.org/podio#ApprovedPolicy/BOCM-19850304T00%3A00%3A00-53> <http://purl.org/dc/terms/creator> <http://www.wikidata.org/entity/Q578788>.

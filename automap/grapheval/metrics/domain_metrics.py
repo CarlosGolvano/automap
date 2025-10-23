@@ -6,7 +6,7 @@ particular use cases (e.g., entity identification, specific property validation)
 """
 
 from rdflib import Literal
-from grapheval.metrics.hierarchy import HierarchyScorer
+from .hierarchy import HierarchyScorer
 from .base import Metrics
 
 

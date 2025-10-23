@@ -1,0 +1,99 @@
+
+prefixes:
+    #Core imports
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    xml: "http://www.w3.org/XML/1998/namespace"
+    #Vocabulary imports
+    schema: "http://schema.org/"
+    terms: "http://purl.org/dc/terms/"
+    dc: "http://purl.org/dc/elements/1.1/"
+    dcam: "http://purl.org/dc/dcam/"
+    vann: "http://purl.org/vocab/vann/"
+    skos: "http://www.w3.org/2004/02/skos/core#"
+    #Ontology imports
+    owl: "http://www.w3.org/2002/07/owl#"
+    foaf: "http://xmlns.com/foaf/0.1/"
+    sioc: "http://rdfs.org/sioc/ns#"
+    lkg: "http://lkg.lynx-project.eu/def/"
+    nif: "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#"
+    eli: "http://data.europa.eu/eli/ontology#"
+    #Knowledge graph domain declaration
+    podio: "http://w3id.org/podio#" # URL to ontoology
+
+sources:
+    extra_json: [data/conversational_extra.json~jsonpath, "$.[*]"]
+    metrics_json: [data/conversational_metrics.json~jsonpath, "$.[*]"]
+    data: [data/conversational.csv~csv ]
+
+mappings:
+    Conversational:
+        sources:
+          - data
+        s: podio:Conversational/$(media)/$(account)/$(id)
+        po:
+          - [a, podio:Conversational]
+          - [terms:language, $(language)~iri]
+          - [terms:created, $(date), xsd:dateTime]
+          - [terms:source, $(source)~iri]
+          - [terms:identifier, $(id), xsd:string]
+          - [terms:publisher, $(agent)~iri]
+          - [terms:creator, $(agent)~iri]
+          - [sioc:has_creator, podio:UserAccount/$(media)/$(account)~iri]
+          - [podio:content, $(content), xsd:string]
+          - [podio:ideology, $(ideology)~iri]
+          - [schema:wordCount, $(word_count)]
+
+    conversationalObjectProperties:
+        sources:
+          - extra_json
+        s: podio:Conversational/$(media)/$(account)/$(id)
+        po:
+          - [sioc:has_container, podio:Hashtag/$(hashtag)~iri]
+          - [sioc:links_to, $(link), xsd:string]
+          - [sioc:mentions, podio:UserAccount/$(media)/$(mention)~iri]
+
+    Hashtag:
+        sources:
+          - extra_json
+        s: podio:Hashtag/$(hashtag)
+        po:
+          - [a, podio:Hashtag]
+          - [terms:identifier, $(hashtag), xsd:string]
+
+    InteractionCounter:
+        sources:
+          - metrics_json
+        s: podio:Conversational/$(media)/$(account)/$(id)/$(metric_name)
+        po:
+          - [a, schema:InteractionCounter]
+          - [schema:interactionType, $(metric)~iri]
+          - [schema:userInteractionCount, $(number), xsd:string]
+
+    interactionStatistic:
+        sources:
+          - metrics_json
+        s: podio:Conversational/$(media)/$(account)/$(id)
+        po:
+          - [schema:interactionStatistic, podio:Conversational/$(media)/$(account)/$(id)/$(metric_name)~iri]
+
+    UserAccount:
+        sources:
+          - data
+        s: podio:UserAccount/$(media)/$(account)
+        po:
+          - [a, sioc:UserAccount]
+          - [sioc:account_of, $(agent)]
+          - [foaf:accountName, $(account), xsd:string]
+          - [foaf:accountServiceHomepage, $(media_url)]
+          - [sioc:creator_of, podio:Conversational/$(media)/$(account)/$(id)]
+    Agent:
+        sources: 
+          - data
+        s: $(agent)
+        po:
+          - [a, foaf:Agent]
+          - [rdfs:isDefinedBy, $(agent)~iri]
+          - [foaf:holdsAccount, podio:UserAccount/$(media)/$(account)~iri]
+

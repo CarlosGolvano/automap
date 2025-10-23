@@ -1,0 +1,44 @@
+
+prefixes:
+    #Core imports
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    xsd: "http://www.w3.org/2001/XMLSchema#"
+    xml: "http://www.w3.org/XML/1998/namespace"
+    #Vocabulary imports
+    schema: "http://schema.org/"
+    terms: "http://purl.org/dc/terms/"
+    dc: "http://purl.org/dc/elements/1.1/"
+    dcam: "http://purl.org/dc/dcam/"
+    vann: "http://purl.org/vocab/vann/"
+    skos: "http://www.w3.org/2004/02/skos/core#"
+    #Ontology imports
+    owl: "http://www.w3.org/2002/07/owl#"
+    foaf: "http://xmlns.com/foaf/0.1/"
+    sioc: "http://rdfs.org/sioc/ns#"
+    lkg: "http://lkg.lynx-project.eu/def/"
+    nif: "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#"
+    eli: "http://data.europa.eu/eli/ontology#"
+    #Knowledge graph domain declaration
+    podio: "http://w3id.org/podio#" # URL to ontoology
+
+sources:
+    data: [data/discursos_navidad.csv~csv ]
+
+mappings:
+    Expository:
+        sources:
+          - data
+        s: podio:Expository/$(id)
+        po:
+          - [a, podio:Expository]
+          - [terms:identifier, $(id), xsd:int]
+          - [podio:content, $(content), xsd:string]
+          - [terms:language, $(language)~iri]
+          - [terms:created, $(date), xsd:dateTime]
+          - [terms:source, $(source)~iri]
+          - [schema:wordCount, $(word_count), xsd:int]
+          - [podio:hasTarget, $(target)~iri]
+          - [podio:ideology, $(ideology)~iri]
+          - [terms:creator, $(creator)~iri]
+

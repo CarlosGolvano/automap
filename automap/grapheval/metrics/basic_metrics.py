@@ -7,7 +7,7 @@ This module provides fundamental metrics for comparing RDF graphs:
 - Class comparison
 """
 
-from grapheval.utils import overlapping_lists, calculate_metrics
+from automap.utils import overlapping_lists, calculate_metrics
 from .base import Metrics
 
 

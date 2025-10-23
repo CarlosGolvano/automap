@@ -8,7 +8,7 @@ all evaluation metrics for RDF graph comparison.
 from rdflib import Graph
 from pathlib import Path
 from typing import Union, Optional
-from grapheval.utils.config import Config
+from automap.utils import Config
 from .basic_metrics import BasicMetrics
 from .property_metrics import PropertyMetrics
 from .object_metrics import ObjectMetrics

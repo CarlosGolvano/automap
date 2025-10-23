@@ -4,12 +4,12 @@ Core Package - Main Evaluation Logic
 This package contains the core evaluation logic for RDF graph comparison.
 """
 
-from automap.grapheval.metrics.evaluator import GraphEvaluator
-from grapheval.metrics.hierarchy import HierarchyScorer
-from grapheval.metrics.basic_metrics import BasicMetrics
-from grapheval.metrics.property_metrics import PropertyMetrics
-from grapheval.metrics.object_metrics import ObjectMetrics
-from grapheval.metrics.domain_metrics import DomainMetrics
+from .evaluator import GraphEvaluator
+from .hierarchy import HierarchyScorer
+from .basic_metrics import BasicMetrics
+from .property_metrics import PropertyMetrics
+from .object_metrics import ObjectMetrics
+from .domain_metrics import DomainMetrics
 
 __all__ = [
     'GraphEvaluator',

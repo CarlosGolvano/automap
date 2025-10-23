@@ -9,8 +9,8 @@ from rdflib import Graph
 from rdflib.term import Literal
 from collections import defaultdict
 from .base import Metrics
-from grapheval.utils.config import Config
-from grapheval.utils import (
+from automap.utils import (
+    Config,
     overlapping_lists,
     average,
     precision_score,

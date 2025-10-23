@@ -6,7 +6,7 @@ This module provides metrics for evaluating RDF properties (predicates).
 
 from rdflib import Literal
 from .base import Metrics
-from grapheval.utils import overlapping_lists, calculate_metrics
+from automap.utils import overlapping_lists, calculate_metrics
 
 
 class PropertyMetrics(Metrics):
