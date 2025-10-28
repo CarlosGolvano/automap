@@ -38,6 +38,9 @@ eval="$python $automap/grapheval/compute_metrics.py"
 map2rml="$python $automap/converters/map2rml.py"
 rml_mapper="java -jar $project/resources/rmlmapper-8.0.0-r378-all.jar"
 
+#Visualization
+print_tabular="$python $automap/utils/visualizers.py"
+
 # Data paths
 input_files="$data/student.csv"
 
@@ -74,6 +77,7 @@ $rml_mapper \
     -o $pred_graph_path 2> $logs_path/rmlmapper.log
 
 # ==============================================================================
+
 # ==============================================================================
 # EVALUATION
 # ==============================================================================
@@ -91,3 +95,9 @@ cat $pred_graph_path | $eval \
     --gold_graph $gold_graph_path > $eval_results_path \
     --only_common
 # ==============================================================================
+
+# ==============================================================================
+# VISUALIZATION
+# ==============================================================================
+
+
