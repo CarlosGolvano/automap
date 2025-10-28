@@ -9,7 +9,7 @@ import json
 from rdflib import Graph
 from automap.grapheval.metrics import GraphEvaluator
 from automap.utils.config import Config
-from argparse import ArgumentParser
+from argparse import ArgumentParser, ArgumentError
 
 
 def compute_metrics(
@@ -56,7 +56,6 @@ def parse_args():
     """Parse command-line arguments."""
     parser = ArgumentParser(
         description="Evaluate RDF graphs using grapheval.",
-        epilog="Example: python compute_metrics.py --config config.yaml --gold gold.nt < pred.nt"
     )
     parser.add_argument(
         '--config',
@@ -82,15 +81,15 @@ def parse_args():
         required=False,
         help='Path to the predicted RDF graph file (if not provided, read from stdin)'
     )
-    parser.add_argument(
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument(
         "--only_common",
         action="store_true",
         help='Evaluate only common metrics.'
     )
-    parser.add_argument(
+    group.add_argument(
         "--only_in_domain",
-        type=bool,
-        default=False,
+        action="store_true",
         help='Evaluate only in domain metrics.'
     )
 
@@ -100,9 +99,6 @@ def parse_args():
 def main():
     """Main CLI entry point."""
     args = parse_args()
-
-    if args.only_common and args.only_in_domain:
-        raise ArgumentParser.error("Args --common and --in_domian are exclusive.")
 
     if not args.pred_graph:
         pred_graph_data = sys.stdin.read()
