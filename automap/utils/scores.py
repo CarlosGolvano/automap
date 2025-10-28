@@ -26,8 +26,8 @@ def calculate_metrics(tp: int, fp: int, fn: int, tn: int = 0) -> dict:
         'fp': fp,
         'fn': fn,
         'tn': tn,
-        'precision': precision_score(tp, fp),
-        'recall': recall_score(tp, fn),
+        'p': precision_score(tp, fp),
+        'r': recall_score(tp, fn),
         'f1': f1_score(tp, fp, fn)
     }
 

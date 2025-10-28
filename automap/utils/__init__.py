@@ -1,4 +1,5 @@
 from .config import Config
+from .eval_extractor import get_common, get_in_domain
 from .scores import (
     calculate_metrics,
     overlapping_lists,
@@ -15,5 +16,7 @@ __all__ = [
     'average',
     'precision_score',
     'recall_score',
-    'f1_score'
+    'f1_score',
+    'get_common',
+    'get_in_domain',
 ]
