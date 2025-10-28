@@ -180,6 +180,23 @@ class GraphEvaluator:
             dict: Comprehensive evaluation results with all metrics
         """
         results = {
+            # Basic, property and object
+            **self.evaluate_common(),
+
+            # Domain-specific metrics
+            **self.evaluate_in_domain(),
+        }
+
+        return results
+
+    def evaluate_common(self) -> dict:
+        """
+        Run only basic evaluation metrics (fast, no ontology needed).
+
+        Returns:
+            dict: Basic evaluation results
+        """
+        return {
             # Basic metrics
             'triples': self.evaluate_triples(),
             'subjects': self.evaluate_subjects_unique(),
@@ -197,13 +214,16 @@ class GraphEvaluator:
             'objects': self.evaluate_objects(),
             'objects_uris': self.evaluate_object_uris(),
             'objects_literals': self.evaluate_object_literals(),
+        }
 
-            # Domain-specific metrics
+    def evaluate_in_domain(self) -> dict:
+        # Domain-specific metrics
+        metrics = {
             'entity_coverage': self.evaluate_entity_coverage(),
         }
 
         if self.hierarchy_scorer:
-            results.update({
+            metrics.update({
                 'classes_with_hierarchy': self.evaluate_class_hierarchies(),
                 'predicates_with_hierarchy': self.evaluate_property_hierarchies(),
                 'single_property_hierarchy_scores': self.evaluate_properties_with_hierarchy(),
@@ -212,34 +232,4 @@ class GraphEvaluator:
                 'predicate_details': self.evaluate_predicate_details(),
             })
 
-        return results
-
-    def evaluate_basic(self) -> dict:
-        """
-        Run only basic evaluation metrics (fast, no ontology needed).
-
-        Returns:
-            dict: Basic evaluation results
-        """
-        return {
-            'triples': self.evaluate_triples(),
-            'subjects': self.evaluate_subjects_unique(),
-            'classes': self.evaluate_classes(),
-            'predicates': self.evaluate_properties(),
-            'objects': self.evaluate_objects(),
-        }
-
-    def get_summary(self) -> dict:
-        """
-        Get a high-level summary of evaluation results.
-
-        Returns:
-            dict: Summary with key F1 scores
-        """
-        return {
-            'triple_f1': self.evaluate_triples()['f1'],
-            'subject_f1': self.evaluate_subjects_unique()['f1'],
-            'predicate_f1': self.evaluate_properties()['f1'],
-            'object_f1': self.evaluate_objects()['f1'],
-            'class_f1': self.evaluate_classes()['f1'],
-        }
+        return metrics

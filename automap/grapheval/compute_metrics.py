@@ -16,9 +16,12 @@ def compute_metrics(
         gold_graph: Graph,
         pred_graph: Graph,
         config: Config,
-        pred_mapping: str
+        pred_mapping: str,
+        only_common: bool = False,
+        only_in_domain: bool = False,
 ) -> dict:
     """
+    TODO: update docstring
     Compute evaluation metrics between gold and predicted RDF graphs.
 
     Args:
@@ -36,7 +39,12 @@ def compute_metrics(
 
     if is_triples and map_is_correct:
         evaluator = GraphEvaluator(pred_graph, gold_graph, config)
-        results = evaluator.evaluate_all()
+        if only_common:
+            results = evaluator.evaluate_common()
+        elif only_in_domain:
+            results = evaluator.evaluate_in_domain()
+        else:
+            results = evaluator.evaluate_all()
 
     results["errors"] = {"NoTriples": not is_triples,
                          "NoCorrectMapping": not map_is_correct}
@@ -74,6 +82,17 @@ def parse_args():
         required=False,
         help='Path to the predicted RDF graph file (if not provided, read from stdin)'
     )
+    parser.add_argument(
+        "--only_common",
+        action="store_true",
+        help='Evaluate only common metrics.'
+    )
+    parser.add_argument(
+        "--only_in_domain",
+        type=bool,
+        default=False,
+        help='Evaluate only in domain metrics.'
+    )
 
     return parser.parse_args()
 
@@ -81,6 +100,9 @@ def parse_args():
 def main():
     """Main CLI entry point."""
     args = parse_args()
+
+    if args.only_common and args.only_in_domain:
+        raise ArgumentParser.error("Args --common and --in_domian are exclusive.")
 
     if not args.pred_graph:
         pred_graph_data = sys.stdin.read()
@@ -95,7 +117,14 @@ def main():
     pred_graph = Graph().parse(data=pred_graph_data)
     config = Config(args.config)
 
-    results = compute_metrics(gold_graph, pred_graph, config, pred_mapping)
+    results = compute_metrics(
+        gold_graph,
+        pred_graph,
+        config,
+        pred_mapping,
+        args.only_common,
+        args.only_in_domain,
+    )
     print(json.dumps(results, ensure_ascii=False, indent=2))
 
 
