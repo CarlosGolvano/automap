@@ -4,9 +4,10 @@
 # Resources
 resources/rmlmapper-8.0.0-r378-all.jar
 
-# Datasets
+# Datasets and experiments
 datasets/blinkg/*
 !datasets/blinkg/bin/
+
 
 datasets/imbd/*
 !datasets/imbd/bin/

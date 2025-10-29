@@ -9,9 +9,9 @@ fi
 
 # Directories paths
 automap="$project/automap"
-dataset="$project/datasets/blinkg"
+dataset="$project/datasets/PODIO"
 # -------------------------
-scenarios="scenario1/1A scenario1/1B scenario1/1C scenario1/1D scenario1/1E scenario1/1F scenario1/1G scenario1/1H"
+scenarios="discursos_navidad"
 # scenarios="scenario1/1A scenario1/1B"
 
 # For a single run: use '_' or '-' or other char different from '/' (no slash to avoid creating subdirectories).
@@ -39,13 +39,18 @@ eval2tabular="$python $automap/utils/eval2tabular.py"
 eval2wb="$python $automap/utils/eval2wandb.py"
 # -------------------------
 
+echo =========================================================================
+echo "Starting experiments $(date +"%Y-%m-%d %H:%M:%S")"
+echo =========================================================================
+
 for scenario in $scenarios; do
     for run in $runs; do
         data="$dataset/data/$scenario"
         exp="remap$run"
         exp_dir="$dataset/exps/$scenario/$exp"
-        echo "----------------------------------------"
-        echo "Processing scenario: $scenario | Run: $run"
+        echo "========================================================================"
+        echo "Processing scenario: $scenario | Run: $run | $(date +"%Y-%m-%d %H:%M:%S")"
+        echo "------------------------------------------------------------------------"
         
         mkdir -p "$exp_dir"
         mkdir -p "$exp_dir/data"
@@ -57,7 +62,6 @@ for scenario in $scenarios; do
         # ==============================================================================
         # Data paths
         input_files="$data/*.csv"
-        echo $input_files
 
         # Results paths
         mapping_yml_path="$exp_dir/mapping.yml"
@@ -80,14 +84,21 @@ for scenario in $scenarios; do
             --rdf $gold_graph_path \
             --output $mapping_rml_path 2> $logs_path/remap.log
 
+
         # ==============================================================================
         # ==============================================================================
         # MAPPING TO RML AND GRAPH GENERATION
         # ==============================================================================
 
         # ReMap already outputs RML
+        # echo =========================================================================
+        # echo "Converting mapping from YAML to RML $(date +"%Y-%m-%d %H:%M:%S")"
+        # echo =========================================================================
         # cat $mapping_yml_path | $map2rml > $mapping_rml_path 2> $logs_path/map2rml.log
 
+        echo "------------------------------------------------------------------------"
+        echo "Creating Knowledge Graph $(date +"%Y-%m-%d %H:%M:%S")"
+        echo "------------------------------------------------------------------------"
         touch $pred_graph_path
         $rml_mapper \
             -m $mapping_rml_path \
@@ -98,6 +109,10 @@ for scenario in $scenarios; do
         # ==============================================================================
         # EVALUATION
         # ==============================================================================
+
+        echo "------------------------------------------------------------------------"
+        echo "Starting evaluation $(date +"%Y-%m-%d %H:%M:%S")"
+        echo "------------------------------------------------------------------------"
 
         # Temp. It is needed to sort the files. This should be fixed in the code.
         cat $gold_graph_path | sort > $exp_dir/gold_graph.nt.sorted
@@ -118,3 +133,6 @@ for scenario in $scenarios; do
         cat $eval_results_path | $eval2tabular > $tabular_results_path
     done
 done
+echo =========================================================================
+echo "Finished experiments $(date +"%Y-%m-%d %H:%M:%S")"
+echo =========================================================================
