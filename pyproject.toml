@@ -3,7 +3,7 @@ name = "automap"
 version = "0.1.0"
 description = "Automatic mappings generation proyect"
 authors = [
-    {name = "CarlosGolvano",email = "carlosgoolvin@gmail.com"}
+    {name = "CarlosGolvano",email = "c.golvano.diaz@gmail.com"}
 ]
 readme = "README.md"
 requires-python = "==3.12.*"
