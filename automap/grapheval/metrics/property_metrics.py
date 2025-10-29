@@ -18,8 +18,9 @@ class PropertyMetrics(Metrics):
         Returns:
             dict: Metrics including tp, fp, fn, tn, precision, recall, f1
         """
-        test_properties = list([p for s, p, o in self.test_graph])
-        reference_properties = list([p for s, p, o in self.reference_graph])
+        # Optimized: Use RDFLib's predicates() method
+        test_properties = list(self.test_graph.predicates())
+        reference_properties = list(self.reference_graph.predicates())
 
         tp = len(overlapping_lists(test_properties, reference_properties))
         fp = len(test_properties) - tp
@@ -105,16 +106,18 @@ class PropertyMetrics(Metrics):
 
     def check_all_reference_predicates_present(self) -> bool:
         # [CG]: Not used
-        test_predicates = set([str(p) for s, p, o in self.test_graph])
-        reference_predicates = set([str(p) for s, p, o in self.reference_graph])
+        # Optimized: Use RDFLib's predicates() method
+        test_predicates = set(self.test_graph.predicates())
+        reference_predicates = set(self.reference_graph.predicates())
 
         overlap = test_predicates.intersection(reference_predicates)
         return 1 if len(overlap) == len(reference_predicates) else 0
 
     def check_only_reference_predicates_present(self) -> bool:
         # [CG]: Not used
-        test_predicates = set([str(p) for s, p, o in self.test_graph])
-        reference_predicates = set([str(p) for s, p, o in self.reference_graph])
+        # Optimized: Use RDFLib's predicates() method
+        test_predicates = set(self.test_graph.predicates())
+        reference_predicates = set(self.reference_graph.predicates())
 
         overlap = test_predicates.intersection(reference_predicates)
         return 1 if len(overlap) == len(test_predicates) else 0

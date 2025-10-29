@@ -58,7 +58,17 @@ class GraphEvaluator:
 
         with open(self.config.ontology_file, 'r') as f:
             ontology_data = f.read()
-        self.ontology_graph = Graph().parse(data=ontology_data, format='turtle')
+
+        # Auto-detect RDF format from file extension
+        ontology_format = self._detect_rdf_format(self.config.ontology_file)
+        self.ontology_graph = Graph().parse(data=ontology_data, format=ontology_format)
+
+        # Auto-extract namespaces and predicates from ontology if not provided in config
+        # Pass ontology_path for caching
+        self.config.extract_from_ontology(self.ontology_graph, ontology_path=self.config.ontology_file)
+
+        # Auto-extract entity IDs from reference graph if not provided in config
+        self.config.extract_ids_from_graph(reference_graph)
 
         self.basic_metrics = BasicMetrics(test_graph, reference_graph, config=self.config)
         self.property_metrics = PropertyMetrics(test_graph, reference_graph)
@@ -73,6 +83,21 @@ class GraphEvaluator:
                 ontology_graph=self.ontology_graph,
                 config=self.config
             )
+
+    def _detect_rdf_format(self, filepath: Union[str, Path]) -> str:
+        extension = Path(filepath).suffix.lower()
+
+        format_map = {
+            '.ttl': 'turtle',
+            '.rdf': 'xml',
+            '.owl': 'xml',
+            '.n3': 'n3',
+            '.nt': 'nt',
+            '.jsonld': 'json-ld',
+        }
+
+        detected_format = format_map.get(extension, 'turtle')
+        return detected_format
 
     # ========== Basic Metrics ==========
 

@@ -21,7 +21,10 @@ def print_metrics(metrics: dict):
             print(key + ' ' * (blanks - len(key)), end="")
             for metric in printable_metrics:
                 if metric in values:
-                    print(f"{metrics[key][metric]:<.2f}\t", end="")
+                    if metric == printable_metrics[-1]:
+                        print(f"{metrics[key][metric]:<.2f}", end="")
+                    else:
+                        print(f"{metrics[key][metric]:<.2f}\t", end="")
                 else:
                     print(f"N/A\t", end="")
             print()

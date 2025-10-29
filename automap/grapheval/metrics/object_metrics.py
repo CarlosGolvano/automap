@@ -17,8 +17,9 @@ class ObjectMetrics(Metrics):
         Returns:
             dict: Metrics including tp, fp, fn, tn, precision, recall, f1, and object lists
         """
-        test_objects = list([str(o) for s, p, o in self.test_graph])
-        reference_objects = list([str(o) for s, p, o in self.reference_graph])
+        # Optimized: Use RDFLib's objects() method
+        test_objects = list([str(o) for o in self.test_graph.objects()])
+        reference_objects = list([str(o) for o in self.reference_graph.objects()])
 
         tp = len(overlapping_lists(test_objects, reference_objects))
         fp = len(test_objects) - tp
@@ -38,8 +39,9 @@ class ObjectMetrics(Metrics):
         Returns:
             dict: Metrics including tp, fp, fn, tn, precision, recall, f1, and URI lists
         """
-        test_uris = list([str(o) for s, p, o in self.test_graph if isinstance(o, URIRef)])
-        reference_uris = list([str(o) for s, p, o in self.reference_graph if isinstance(o, URIRef)])
+        # Optimized: Use RDFLib's objects() method
+        test_uris = list([str(o) for o in self.test_graph.objects() if isinstance(o, URIRef)])
+        reference_uris = list([str(o) for o in self.reference_graph.objects() if isinstance(o, URIRef)])
 
         tp = len(overlapping_lists(test_uris, reference_uris))
         fp = len(test_uris) - tp
@@ -61,8 +63,9 @@ class ObjectMetrics(Metrics):
         Returns:
             dict: Metrics including tp, fp, fn, tn, precision, recall, f1, and literal lists
         """
-        test_literals = list([str(o) for s, p, o in self.test_graph if isinstance(o, Literal)])
-        reference_literals = list([str(o) for s, p, o in self.reference_graph if isinstance(o, Literal)])
+        # Optimized: Use RDFLib's objects() method
+        test_literals = list([str(o) for o in self.test_graph.objects() if isinstance(o, Literal)])
+        reference_literals = list([str(o) for o in self.reference_graph.objects() if isinstance(o, Literal)])
 
         tp = len(overlapping_lists(test_literals, reference_literals))
         fp = len(test_literals) - tp

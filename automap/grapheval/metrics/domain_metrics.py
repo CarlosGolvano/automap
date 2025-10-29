@@ -5,7 +5,7 @@ This module provides domain-specific evaluation metrics tailored to
 particular use cases (e.g., entity identification, specific property validation).
 """
 
-from rdflib import Literal
+from rdflib import Literal, URIRef
 from .hierarchy import HierarchyScorer
 from .base import Metrics
 
@@ -22,14 +22,10 @@ class DomainMetrics(Metrics):
             int: Count of entities with matching IDs
         """
         entity_ids = set(self.config.ids_by_type.get(entity_type, []))
-        subjects = set([str(s) for s, p, o in self.test_graph if str(s).startswith(self.config.base_iri)])
+        # Optimized: Use RDFLib's subjects() method
+        subjects = set([str(s) for s in self.test_graph.subjects() if str(s).startswith(self.config.base_iri)])
 
-        count = 0
-        for subject in subjects:
-            if any(entity_id in subject for entity_id in entity_ids):
-                count += 1
-
-        return count
+        return sum(1 for subject in subjects if any(entity_id in subject for entity_id in entity_ids))
 
     def check_all_entity_ids_present(self, entity_type: str) -> int:
         """
@@ -42,14 +38,11 @@ class DomainMetrics(Metrics):
             int: 1 if all present, 0 otherwise
         """
         entity_ids = set(self.config.ids_by_type.get(entity_type, []))
-        subjects = set([str(s) for s, p, o in self.test_graph if str(s).startswith(self.config.base_iri)])
+        # Optimized: Use RDFLib's subjects() method
+        subjects = set([str(s) for s in self.test_graph.subjects() if str(s).startswith(self.config.base_iri)])
 
-        count = 0
-        for entity_id in entity_ids:
-            if any(entity_id in subject for subject in subjects):
-                count += 1
-
-        return 1 if len(entity_ids) == count else 0
+        matched_ids = sum(1 for entity_id in entity_ids if any(entity_id in subject for subject in subjects))
+        return 1 if matched_ids == len(entity_ids) else 0
 
     def count_entity_ids_with_type(self, entity_type: str) -> int:
         """
@@ -62,17 +55,13 @@ class DomainMetrics(Metrics):
             int: Count of correctly typed entities
         """
         entity_ids = set(self.config.ids_by_type.get(entity_type, []))
-        subjects_with_type = set([str(s) for s, p, o in self.test_graph
-                                  if str(s).startswith(self.config.base_iri)
-                                  and str(p) == self.config.rdf_type_uri
-                                  and str(o) == entity_type])
+        # Optimized: Use RDFLib's subjects() method with predicate and object filters
+        rdf_type = URIRef(self.config.rdf_type_uri)
+        entity_type_uri = URIRef(entity_type)
+        subjects_with_type = set([str(s) for s in self.test_graph.subjects(predicate=rdf_type, object=entity_type_uri)
+                                  if str(s).startswith(self.config.base_iri)])
 
-        count = 0
-        for subject in subjects_with_type:
-            if any(entity_id in subject for entity_id in entity_ids):
-                count += 1
-
-        return count
+        return sum(1 for subject in subjects_with_type if any(entity_id in subject for entity_id in entity_ids))
 
     def evaluate_predicate_details(self, predicate: str, hierarchy_scorer: HierarchyScorer = None) -> dict:
         """
@@ -133,11 +122,6 @@ class DomainMetrics(Metrics):
         """
         # Include predicates from reference graph plus common extras
         predicates = set([str(p) for s, p, o in self.reference_graph])
-        predicates.update([
-            "http://dbpedia.org/ontology/editor",
-            "http://dbpedia.org/ontology/runtime",
-            "http://dbpedia.org/ontology/producer"
-        ])
 
         results = {}
         for predicate in predicates:

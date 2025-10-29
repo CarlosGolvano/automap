@@ -7,9 +7,9 @@ Updated to use the new grapheval package structure with YAML configuration.
 import sys
 import json
 from rdflib import Graph
-from automap.grapheval.metrics import GraphEvaluator
+from argparse import ArgumentParser
 from automap.utils.config import Config
-from argparse import ArgumentParser, ArgumentError
+from automap.grapheval.metrics import GraphEvaluator
 
 
 def compute_metrics(
@@ -47,7 +47,7 @@ def compute_metrics(
             results = evaluator.evaluate_all()
 
     results["errors"] = {"NoTriples": not is_triples,
-                         "NoCorrectMapping": not map_is_correct}
+                         "NoValidMapping": not map_is_correct}
 
     return results
 
