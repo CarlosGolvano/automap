@@ -1,7 +1,7 @@
 #!/bin/bash
 
 project="/home/carlos/workspace/automap"
-cache_dir="/home/carlos/.cache/automap"
+cache_dir="$HOME/.cache/automap"
 
 # Parse command line arguments
 no_backup=false
@@ -158,7 +158,6 @@ for scenario in $scenarios; do
         # ==============================================================================
         # VISUALIZATION
         # ==============================================================================
-        echo "cat $eval_results_path | $eval2tabular > $tabular_results_path" 
         cat $eval_results_path | $eval2tabular > $tabular_results_path
     done
 done
