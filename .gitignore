@@ -13,7 +13,8 @@ datasets/imbd/*
 !datasets/imbd/bin/
 
 datasets/PODIO/*
-!datasets/PODIO/bin/
+datasets/PODIO/bin/logs/
+!datasets/PODIO/bin/*.sh
 
 # Methods
 methods/

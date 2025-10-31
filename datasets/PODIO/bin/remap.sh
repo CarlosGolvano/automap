@@ -1,6 +1,23 @@
 #!/bin/bash
 
 project="/home/carlos/workspace/automap"
+cache_dir="/home/carlos/.cache/automap"
+
+# Parse command line arguments
+no_backup=false
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --no-backup)
+            no_backup=true
+            shift
+            ;;
+        *)
+            echo "Unknown option: $1"
+            echo "Usage: $0 [--no-backup]"
+            exit 1
+            ;;
+    esac
+done
 
 # Conda env
 if [ -z "$CONDA_PREFIX" ]; then
@@ -52,6 +69,17 @@ for scenario in $scenarios; do
         echo "Processing scenario: $scenario | Run: $run | $(date +"%Y-%m-%d %H:%M:%S")"
         echo "------------------------------------------------------------------------"
         
+        # Backup and reset exp dir if exists
+        if [ "$no_backup" = false ]; then
+            mkdir -p "$cache_dir/exp_backups"
+            echo "Backing up existing experiment to $cache_dir/exp_backups/${exp}_backup_$(date +"%Y%m%d_%H%M%S")"
+            mv -f "$exp_dir" "$cache_dir/exp_backups/${exp}_backup_$(date +"%Y%m%d_%H%M%S")"
+        else
+            echo "No backup requested. Overwriting existing experiment directory."
+            rm -rf "$exp_dir"
+        fi
+
+        # Create experiment directory
         mkdir -p "$exp_dir"
         mkdir -p "$exp_dir/data"
 
@@ -130,6 +158,7 @@ for scenario in $scenarios; do
         # ==============================================================================
         # VISUALIZATION
         # ==============================================================================
+        echo "cat $eval_results_path | $eval2tabular > $tabular_results_path" 
         cat $eval_results_path | $eval2tabular > $tabular_results_path
     done
 done
