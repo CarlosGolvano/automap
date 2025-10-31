@@ -1,24 +1,33 @@
-def print_header(header: str):
+def print_title(header: str, level: int = 1, mark: str = ''):
     line_len = 80
     mid_len_0 = (line_len - len(header) - 2) / 2
     mid_len_1 = mid_len_0 if mid_len_0.is_integer() else int(mid_len_0) + 1
 
-    print('+' + '=' * (line_len - 2) + '+')
-    print('+' + '=' * int(mid_len_0) + header + '=' * int(mid_len_1) + '+')
-    print('+' + '=' * (line_len - 2) + '+')
+    if level == 1:
+        char = '='
+    elif level == 2:
+        char = '-'
+    elif level == 3:
+        char = '~'
+    else:
+        char = '`'
+
+    print(mark + '+' + char * (line_len - 2) + '+')
+    print(mark + '+' + char * int(mid_len_0) + header + char * int(mid_len_1) + '+')
+    print(mark + '+' + char * (line_len - 2) + '+')
 
 
-def print_metrics(metrics: dict):
+def print_metrics(metrics: dict, mark: str = ''):
     # TODO: hardcoded metrics is bad.
     # metrics = ['tp', 'fp', 'fn', 'tn', 'precision', 'recall', 'f1']
     printable_metrics = ['p', 'r', 'f1']
     exclude = ["errors"]
     blanks = max(len(key) for key in metrics.keys()) + 1
 
-    print(' ' * blanks + '\t'.join(printable_metrics))
+    print(mark + ' ' * blanks + '\t'.join(printable_metrics))
     for key, values in metrics.items():
         if key not in exclude:
-            print(key + ' ' * (blanks - len(key)), end="")
+            print(mark + key + ' ' * (blanks - len(key)), end="")
             for metric in printable_metrics:
                 if metric in values:
                     if metric == printable_metrics[-1]:
@@ -35,5 +44,5 @@ if __name__ == "__main__":
     import json
 
     json_data = json.loads(sys.stdin.read())
-    print_header("SUMMARY")
+    print_title("SUMMARY")
     print_metrics(json_data)
